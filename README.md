@@ -66,7 +66,6 @@ Data can be kept in memory and will not require a database
 
 ```
 class Account
-
 @balance
 
 
@@ -75,4 +74,20 @@ end
 
 def withdraw
 end
+```
+
+
+```
+class Statement
+@date
+@amount
+@balance
+
+
+def print
+end
+
+
+
+
 ```
