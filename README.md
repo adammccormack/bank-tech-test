@@ -81,7 +81,7 @@ end
 class Statement
 @date
 @amount
-@balance
+@balances
 
 
 def print
