@@ -61,8 +61,10 @@ Data can be kept in memory and will not require a database
 ```
 
 
-Class Planning
+### Class Plan
 
+
+```
 class Account
 
 @balance
@@ -73,3 +75,4 @@ end
 
 def withdraw
 end
+```
