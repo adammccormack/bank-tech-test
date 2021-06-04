@@ -4,12 +4,19 @@ require 'statement'
 
 describe Statement do
 
-    describe '.date' do
-        it 'prints the current date' do
+    describe '#date_save' do
+        it 'saves the current date during a transaction' do
+            account = BankAccount.new
             statement = Statement.new
 
-            expect(statement.date).to eq(Time.now.strftime("%d/%m/%Y %H:%M"))
+            account.deposit(100)
+
+            expect(statement.date).to eq(Time.now.strftime("%d/%m/%Y"))
         end
     end
+
+
+
+
 
 end

@@ -80,7 +80,7 @@ end
 ```
 class Statement
 @date
-@amount
+@amount 
 @balances
 
 
