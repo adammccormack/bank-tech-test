@@ -36,30 +36,36 @@ So that I can interact with the code
 I want to use a REPL
 ```
  
+
+```
+As a User
+So that I can interact with the code
+I want to use a REPL
+```
+
 ```
 As a Customer
-So that I have a place to store my money
-I want to able to deposit it into my account
+So that I can deposit money
+I want to be able to deposit a specific amount of money into my account
 ```
- 
+
 ```
 As a Customer
-So that I can remove my money
-I want to be able to withdraw my money from my account
+So that I can withdraw money
+I want to be able to withdraw a specific amount of money from my account
 ```
- 
+
 ```
 As a Customer
 So that I can see useful information about my account
-I would like to be able to print a statement with the date, amount and balance shown.
-```
- 
-```
-As a User
-So that we do not have unnecessary code
-Data can be kept in memory and will not require a database
+I would like to be able to print a statement with the date, amount and balance shown for each transaction.
 ```
 
+```
+As a User
+So that we keep the program minimal
+Data can be kept in memory and will not require a database
+```
 
 ### Class Plan
 
