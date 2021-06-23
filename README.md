@@ -35,7 +35,6 @@ As a User
 So that I can interact with the code
 I want to use a REPL
 ```
- 
 
 ```
 As a User
@@ -67,33 +66,3 @@ So that we keep the program minimal
 Data can be kept in memory and will not require a database
 ```
 
-### Class Plan
-
-
-```
-class BankAccount
-@balance
-
-
-def deposit
-end
-
-def withdraw
-end
-```
-
-
-```
-class Statement
-@date
-@amount 
-@balances
-
-
-def print
-end
-
-
-
-
-```
