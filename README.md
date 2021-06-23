@@ -33,13 +33,7 @@ date  || credit || debit || balance
 ```
 As a User
 So that I can interact with the code
-I want to use a REPL
-```
-
-```
-As a User
-So that I can interact with the code
-I want to use a REPL
+I want to be able to use a REPL to interact with the codebase
 ```
 
 ```
