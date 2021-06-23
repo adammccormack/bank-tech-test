@@ -6,4 +6,15 @@ describe Account do
         
         expect(account.balance).to eq (0)
     end
+
+
+    describe '#deposit' do
+        it 'deposits a specific amount of money into an account' do
+            account = Account.new
+
+            account.deposit(100)
+
+            expect(account.balance).to eq(100)
+        end
+    end
 end
