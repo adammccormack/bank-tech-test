@@ -29,5 +29,17 @@ describe Account do
         end
     end
 
-
+    describe '#print_statement' do
+        it 'prints a statement of all transactions' do
+            account = Account.new
+            time = Time.new
+            time.strftime("%d/%m/%Y")
+            
+            account.deposit(100)
+            account.withdraw(50)
+            account.print_statement
+            
+            expect(account.print_statement).to include(transaction.all)
+        end
+    end
 end
