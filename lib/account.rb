@@ -26,12 +26,4 @@ class Account
         end
     end
 
-    account = Account.new
-
-account.deposit(1)
-
-account.deposit(1)
-
-p account
-
 end
