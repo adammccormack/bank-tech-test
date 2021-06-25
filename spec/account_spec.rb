@@ -36,7 +36,7 @@ describe Account do
             date = time.strftime("%d/%m/%Y")
             account.deposit(100)
 
-            expect(account.print_statement).to eq([{:amount=>100, :balance=>100, :time=>Time.now.strftime("%d/%m/%Y")}])
+            expect(account.print_statement).to eq([{:amount=>100, :balance=>100, :date=>Time.now.strftime("%d/%m/%Y")}])
         end
     end
 end

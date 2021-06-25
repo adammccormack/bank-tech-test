@@ -1,9 +1,7 @@
-
-
 class Account
     DEFAULT_BALANCE = 0
 
-    attr_reader :balance, :date, :transactions, :array
+    attr_reader :balance, :transactions
 
     def initialize
         @balance = DEFAULT_BALANCE
@@ -12,12 +10,12 @@ class Account
 
     def deposit(amount)
         @balance += amount
-        transactions.push({time: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
+        transactions.push({date: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
       end
 
     def withdraw(amount)
         @balance -= amount
-        transactions.push({time: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
+        transactions.push({date: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
     end
 
     def print_statement
