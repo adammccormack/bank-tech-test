@@ -3,7 +3,7 @@
 class Account
     DEFAULT_BALANCE = 0
 
-    attr_reader :balance, :date
+    attr_reader :balance, :date, :transactions, :array
 
     def initialize
         @balance = DEFAULT_BALANCE
@@ -11,31 +11,27 @@ class Account
     end
 
     def deposit(amount)
-        @transactions << Time.now.strftime("%d/%m/%Y")
         @balance += amount
-        @transactions << amount
-        @transactions << @balance
-        
-    end
+        transactions.push({time: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
+      end
 
     def withdraw(amount)
-        @transactions << Time.now.strftime("%d/%m/%Y")
         @balance -= amount
-        @transactions << amount
-        @transactions << @balance
+        transactions.push({time: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
     end
 
     def print_statement
-        p @transactions
+        transactions.each do |i|
+            puts i
+        end
     end
 
+    account = Account.new
+
+account.deposit(1)
+
+account.deposit(1)
+
+p account
+
 end
-
-
-# I would like to be able to print a statement with the date,
-#  amount and balance shown for each transaction.
-
-
-# date, amount and balance
-# in order to get the date to show up on the screen I have to print 
-# it in the correct format. 
