@@ -31,9 +31,8 @@ describe Account do
     describe '#print_statement' do
         it 'print a statement of all transactions' do
             account = Account.new
-            time = Time.new 
             
-            date = time.strftime("%d/%m/%Y")
+            date = Time.now.strftime("%d/%m/%Y")
             account.deposit(100)
 
             expect(account.print_statement).to eq([{:amount=>100, :balance=>100, :date=>Time.now.strftime("%d/%m/%Y")}])

@@ -11,7 +11,7 @@ class Account
     def deposit(amount)
         @balance += amount
         transactions.push({date: Time.now.strftime("%d/%m/%Y"),  amount: amount, balance: balance })
-      end
+    end
 
     def withdraw(amount)
         @balance -= amount
@@ -19,9 +19,7 @@ class Account
     end
 
     def print_statement
-        transactions.each do |i|
-            puts i
-        end
+        transactions.each {|i| puts i }
     end
 
 end
