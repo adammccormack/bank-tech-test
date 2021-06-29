@@ -19,7 +19,22 @@ class Account
     end
 
     def print_statement
-        transactions.each {|i| puts i }
+        transactions.each do |element|
+            puts "#{element[:date]}: #{element[:amount]} #{element[:balance]}"
+        end
     end
+    
+    account = Account.new
+    account.deposit(1)
+    account.deposit(1)
+    account.print_statement
 
 end
+
+
+
+# def print_statement
+#     transactions.each do |e|
+#         e.each { |key, value| print value }
+#     end
+# end
