@@ -20,7 +20,7 @@ class Account
 
     def print_statement
         transactions.each do |element|
-            puts "#{element[:date]}: #{element[:amount]} #{element[:balance]}"
+            puts "#{element[:date]} #{element[:amount]} #{element[:balance]}"
         end
     end
     
@@ -30,11 +30,3 @@ class Account
     account.print_statement
 
 end
-
-
-
-# def print_statement
-#     transactions.each do |e|
-#         e.each { |key, value| print value }
-#     end
-# end
